@@ -1,0 +1,32 @@
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+body { font-size: 62.5%; background-color: #fcfcfc; color: #111; }
+a { color: #7c7; }
+a:hover { color: #383; }
+
+.container { margin: 0 auto; text-align: center; }
+
+#content	{ padding: 20% 0;}
+
+#logo { letter-spacing: -1px; }
+
+.logo-name { font: 400 3.6rem/4.176rem "trajan-pro", serif; }
+.logo-degree { font: 400 1.8rem/2.088rem "trajan-pro", serif; }
+
+#description { font: 400 1.8rem/2.088rem "trajan-pro" serif; }
+
+p { font: 400 1.313rem/1.524rem "calluna", serif; margin: 0 0 1.143em 0; }
+
+#dev { font: italic 1.8rem/2.088rem "calluna", serif; margin-top: 2.7em; }
+#address { font-size: 0.9rem; line-height: 1.16rem; color: #999; }
+
+@media (max-width: 767px) { 
+  .logo-name { font: 400 2.1rem/2.436rem "trajan-pro", serif; }
+  .logo-degree { font: 400 1.05rem/1.218rem "trajan-pro", serif; }
+  #description { font: 400 1.05rem/1.218rem "trajan-pro" serif; }
+  p { font: 400 1.313rem/1.524rem "calluna", serif; margin: 0 0 1.143em 0; }
+  #dev { font: italic 1.313rem/1.524rem "calluna", serif; margin-top: 1.8em; }
+}

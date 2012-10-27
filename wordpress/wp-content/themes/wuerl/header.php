@@ -44,6 +44,9 @@
   		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/less/bootstrap.less">
   		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/less/responsive.less">
 
+		<script type="text/javascript" src="//use.typekit.net/ybv4okk.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
