@@ -1,0 +1,77 @@
+/*
+Theme Name: Wuerl
+Theme URI: http://back3nd.com/
+Description: A one-page responsive theme based on the Bootstrap + Boilerplate frameworks
+Version: 1.0
+Author: back3nd
+Author URI: http://back3nd.com/
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: MIT License
+License URI: http://back3nd.com/licenses/mit.txt
+*/
+
+/* Variables */
+@darkGray: #111;
+@offWhite: #fcfcfc;
+@darkGreen: #383;
+@lightGreen: #7c7;
+@bgColor: @offWhite;
+@textColor: @darkGray;
+
+/* Bootstrap hacks */
+
+#main article img { height: auto; max-width:100% }
+img {
+	.alignleft { margin-right: 10px; float: left }
+	.alignright { margin-left: 10px; float: right }
+	.aligncenter { display:block; margin: 0 auto }
+}
+.ie8 #main .media-grid img { max-height: none important; max-width:none !important }
+
+@media only screen and (max-width: 767px) { 
+	.row-fluid .offset2:first-child { margin-left: 0; }
+}
+
+@media only screen and (min-width: 980px) { 
+	body { padding-top: 60px }
+	.container-fluid { max-width: 970px; margin: 0 auto; padding-left: 20px; padding-right: 20px }
+}
+
+/* General */
+
+body { background-color: @bgColor; color: @textColor; font: 16px 'calluna', serif; }
+h1, h2, h3, h4, h5, h6 { font-style: italic; font-weight: 400; text-align: center; }
+h1.page-title { margin: 1.8rem 0; }
+h3 { color: @darkGreen; margin: 0 0 1.143em 0; text-align: left; }
+p, section ul li { font: 400 1.2rem/1.8rem "calluna", serif; }
+section ul li { margin-left: 2.286em; list-style: none; }
+p, section ul { margin: 0 0 1.143em 0; }
+a { color: @darkGreen; }
+a:hover { color: @lightGreen; }
+
+/* Main nav */
+
+.navbar-inverse { 
+	.navbar-inner { background: @darkGray; }
+	a, .brand, .nav > li > a { color: @offWhite; font: 400 0.8rem 'trajan-pro', 'calluna', serif; font-weight: 400 !important; padding: 15px 15px 15px; }
+	.brand:hover, .nav > li > a:hover { color: @darkGreen; }
+	a, .nav .active > a { background-color: @darkGray; color: @lightGreen }
+	a:hover, .nav .active > a:hover, .nav .active > a:focus { background-color: @darkGray; color: @darkGreen; text-decoration: none; }
+	a { display: block; }
+}
+
+/* Home */
+h1#logo { font: 400 3.6rem/4.176rem "trajan-pro", serif; letter-spacing: -1px; margin-top: 70px; }
+
+.logo-degree { font-size: 1.8rem; line-height: 2.088rem; }
+
+h2#description { font: 400 1.8rem/2.088rem "trajan-pro" serif; margin-bottom: 280px; }
+
+/* Pages */
+
+.lead { margin: 0 0 1.143em 0; font-size: 1.4rem; font-weight: 200; line-height: 2rem; }
+
+/* Footer */
+
+footer[role="contentinfo"] p { font-size: 0.8rem; }
+#creditback3nd { background:url('images/back3nd-mini.png') no-repeat left top transparent; }

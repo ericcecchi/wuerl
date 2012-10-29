@@ -1,0 +1,26 @@
+#main article img{height:auto;max-width:100%;}
+img .alignleft{margin-right:10px;float:left;}
+img .alignright{margin-left:10px;float:right;}
+img .aligncenter{display:block;margin:0 auto;}
+.ie8 #main .media-grid img{max-height:none important;max-width:none !important;}
+@media only screen and (max-width:767px){.row-fluid .offset2:first-child{margin-left:0;}}@media only screen and (min-width:980px){body{padding-top:60px;} .container-fluid{max-width:970px;margin:0 auto;padding-left:20px;padding-right:20px;}}body{background-color:#fcfcfc;color:#111111;font:16px 'calluna',serif;}
+h1,h2,h3,h4,h5,h6{font-style:italic;font-weight:400;text-align:center;}
+h1.page-title{margin:1.8rem 0;}
+h3{color:#338833;margin:0 0 1.143em 0;text-align:left;}
+p,section ul li{font:400 1.2rem/1.8rem "calluna",serif;}
+section ul li{margin-left:2.286em;list-style:none;}
+p,section ul{margin:0 0 1.143em 0;}
+a{color:#338833;}
+a:hover{color:#77cc77;}
+.navbar-inverse .navbar-inner{background:#111111;}
+.navbar-inverse a,.navbar-inverse .brand,.navbar-inverse .nav>li>a{color:#fcfcfc;font:400 0.8rem 'trajan-pro','calluna',serif;font-weight:400 !important;padding:15px 15px 15px;}
+.navbar-inverse .brand:hover,.navbar-inverse .nav>li>a:hover{color:#338833;}
+.navbar-inverse a,.navbar-inverse .nav .active>a{background-color:#111111;color:#77cc77;}
+.navbar-inverse a:hover,.navbar-inverse .nav .active>a:hover,.navbar-inverse .nav .active>a:focus{background-color:#111111;color:#338833;text-decoration:none;}
+.navbar-inverse a{display:block;}
+h1#logo{font:400 3.6rem/4.176rem "trajan-pro",serif;letter-spacing:-1px;margin-top:70px;}
+.logo-degree{font-size:1.8rem;line-height:2.088rem;}
+h2#description{font:400 1.8rem/2.088rem "trajan-pro" serif;margin-bottom:280px;}
+.lead{margin:0 0 1.143em 0;font-size:1.4rem;font-weight:200;line-height:2rem;}
+footer[role="contentinfo"] p{font-size:0.8rem;}
+#creditback3nd{background:url('images/back3nd-mini.png') no-repeat left top transparent;}

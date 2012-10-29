@@ -18,7 +18,7 @@ a:hover { color: #383; }
 
 #description { font: 400 1.8rem/2.088rem "trajan-pro" serif; }
 
-p { font: 400 1.313rem/1.524rem "calluna", serif; margin: 0 0 1.143em 0; }
+p, li { font: 400 1.313rem/1.524rem "calluna", serif; margin: 0 0 1.143em 0; }
 
 #dev { font: italic 1.8rem/2.088rem "calluna", serif; margin-top: 2.7em; }
 #address { font-size: 0.9rem; line-height: 1.16rem; color: #999; }
