@@ -244,7 +244,9 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 function theme_js(){
 
 	wp_deregister_script('jquery'); // initiate the function	
-	wp_register_script('jquery', get_template_directory_uri().'/library/js/libs/jquery-1.7.1.min.js', false, '1.7.1');
+/* 	wp_register_script('jquery', get_template_directory_uri().'/library/js/libs/jquery-1.7.1.min.js', false, '1.7.1'); */
+/* 	Use Google jQuery */
+	wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2');
 
 	wp_register_script('bootstrap', get_template_directory_uri().'/library/js/bootstrap.min.js');
 	wp_register_script('modernizr', get_template_directory_uri().'/library/js/libs/modernizr.full.min.js');

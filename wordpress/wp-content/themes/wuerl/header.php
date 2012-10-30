@@ -39,10 +39,7 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-  		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/less/bootstrap.less">
-  		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/less/responsive.less">
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<script type="text/javascript" src="//use.typekit.net/ybv4okk.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
