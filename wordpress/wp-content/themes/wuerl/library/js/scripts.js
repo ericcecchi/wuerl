@@ -100,10 +100,12 @@ $(document).ready(function() {
         var $anchor = $(this);
  
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 100
+            scrollTop: $($anchor.attr('href')).offset().top - 75
         }, 600,'easeInOutExpo');
         event.preventDefault();
     });
 	});
 	 
+	$().UItoTop({ easingType: 'easeInOutExpo' });
+
 }); /* end of as page load scripts */

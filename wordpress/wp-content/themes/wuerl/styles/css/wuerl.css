@@ -24,5 +24,8 @@ h1#logo{font:400 3.6rem/4.176rem "trajan-pro",serif;letter-spacing:-1px;margin-t
 .logo-degree{font-size:1.8rem;line-height:2.088rem;}
 h2#description{font:400 1.8rem/2.088rem "trajan-pro" serif;margin-bottom:420px;}
 .lead{margin:0 0 1.143em 0;font-size:1.4rem;font-weight:200;line-height:2rem;}
+#toTop{display:none;text-decoration:none;position:fixed;bottom:10px;right:10px;overflow:hidden;width:51px;height:51px;border:none;text-indent:100%;background:url(../../library/img/ui.totop.png) no-repeat left top;}
+#toTopHover{background:url(../../library/img/ui.totop.png) no-repeat left -51px;width:51px;height:51px;display:block;overflow:hidden;float:left;opacity:0;-moz-opacity:0;filter:alpha(opacity=0);}
+#toTop:active,#toTop:focus{outline:none;}
 footer[role="contentinfo"] p{font-size:0.8rem;}
 #creditback3nd{background:url('images/back3nd-mini.png') no-repeat left top transparent;}
