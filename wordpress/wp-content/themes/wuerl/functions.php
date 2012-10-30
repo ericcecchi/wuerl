@@ -137,6 +137,7 @@ function add_class_attachment_link($html){
 add_filter('wp_get_attachment_link','add_class_attachment_link',10,1);
 
 // Add lead class to first paragraph
+/*
 function first_paragraph($content){
 		global $post;
 
@@ -147,6 +148,7 @@ function first_paragraph($content){
 				return preg_replace('/<p([^>]+)?>/', '<p$1 class="lead">', $content, 1);
 }
 add_filter('the_content', 'first_paragraph');
+*/
 
 // Menu output mods
 class description_walker extends Walker_Nav_Menu
@@ -246,7 +248,8 @@ function theme_js(){
 	wp_deregister_script('jquery'); // initiate the function	
 /* 	wp_register_script('jquery', get_template_directory_uri().'/library/js/libs/jquery-1.7.1.min.js', false, '1.7.1'); */
 /* 	Use Google jQuery */
-	wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2');
+	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, '1.8.2');
+	wp_register_script('jquery-easing', get_template_directory_uri().'/library/js/jquery.easing.1.3.js');
 
 	wp_register_script('bootstrap', get_template_directory_uri().'/library/js/bootstrap.min.js');
 	wp_register_script('modernizr', get_template_directory_uri().'/library/js/libs/modernizr.full.min.js');
@@ -254,6 +257,7 @@ function theme_js(){
 	wp_register_script('scripts', get_template_directory_uri().'/library/js/scripts-ck.js');
 
 	wp_enqueue_script('jquery');
+	wp_enqueue_script('jquery-easing');
 	wp_enqueue_script('bootstrap', array('jQuery'), '1.1', true);
 
 	wp_enqueue_script('scripts', array('jQuery'), '1.1', true);

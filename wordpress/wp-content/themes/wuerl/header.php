@@ -52,14 +52,14 @@
 				
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<body <?php body_class('slide'); ?>  data-spy="scroll" data-target=".navbar" data-offset="120">
 				
 		<header role="banner">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container-fluid nav-container">
 						<nav role="navigation">
-							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="#home"><?php bloginfo('name'); ?></a>
 							
 							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						        <span class="icon-bar"></span>

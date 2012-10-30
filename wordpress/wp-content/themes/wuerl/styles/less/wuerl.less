@@ -20,13 +20,13 @@ License URI: http://back3nd.com/licenses/mit.txt
 
 /* Bootstrap hacks */
 
-#main article img { height: auto; max-width:100% }
 img {
-	.alignleft { margin-right: 10px; float: left }
-	.alignright { margin-left: 10px; float: right }
-	.aligncenter { display:block; margin: 0 auto }
+	&.alignleft { margin-right: 10px; float: left }
+	&.alignright { margin-left: 10px; float: right }
+	&.aligncenter { display:block; margin: 0 auto }
 }
 .ie8 #main .media-grid img { max-height: none important; max-width:none !important }
+#main article img { height: auto; max-width:100% }
 
 @media only screen and (max-width: 767px) { 
 	.row-fluid .offset2:first-child { margin-left: 0; }
@@ -48,6 +48,8 @@ section ul li { margin-left: 2.286em; list-style: none; }
 p, section ul { margin: 0 0 1.143em 0; }
 a { color: @darkGreen; }
 a:hover { color: @lightGreen; }
+article { margin-bottom: 100px; }
+article#home { margin-bottom: 200px; }
 
 /* Main nav */
 
@@ -61,11 +63,11 @@ a:hover { color: @lightGreen; }
 }
 
 /* Home */
-h1#logo { font: 400 3.6rem/4.176rem "trajan-pro", serif; letter-spacing: -1px; margin-top: 70px; }
+h1#logo { font: 400 3.6rem/4.176rem "trajan-pro", serif; letter-spacing: -1px; margin-top: 50px; }
 
 .logo-degree { font-size: 1.8rem; line-height: 2.088rem; }
 
-h2#description { font: 400 1.8rem/2.088rem "trajan-pro" serif; margin-bottom: 280px; }
+h2#description { font: 400 1.8rem/2.088rem "trajan-pro" serif; margin-bottom: 420px; }
 
 /* Pages */
 
