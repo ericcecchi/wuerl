@@ -1,11 +1,11 @@
 /*
-Theme Name: Wuerl
-Theme URI: http://back3nd.com/
-Description: A one-page responsive theme based on the Bootstrap + Boilerplate frameworks
+Threme Name: Wuerl
+Threme URI: http://back3nd.com/
+Description: A one-page responsive threme based on the Bootstrap + Boilerplate frameworks
 Version: 1.0
 Author: back3nd
 Author URI: http://back3nd.com/
-Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-tremplate, threme-options
 License: MIT License
 License URI: http://back3nd.com/licenses/mit.txt
 */
@@ -28,24 +28,15 @@ img {
 .ie8 #main .media-grid img { max-height: none important; max-width:none !important }
 #main article img { height: auto; max-width:100% }
 
-@media only screen and (max-width: 767px) { 
-	.row-fluid .offset2:first-child { margin-left: 0; }
-}
-
-@media only screen and (min-width: 980px) { 
-	body { padding-top: 60px }
-	.container-fluid { max-width: 970px; margin: 0 auto; padding-left: 20px; padding-right: 20px }
-}
-
 /* General */
 
-body { background-color: @bgColor; color: @textColor; font: 16px 'calluna', serif; }
+body { background-color: @bgColor; color: @textColor; font: 1.25rem/1.75rem 'calluna', serif; }
 h1, h2, h3, h4, h5, h6 { font-style: italic; font-weight: 400; text-align: center; }
-h1.page-title { margin: 1.8rem 0; }
-h3 { color: @darkGreen; margin: 0 0 1.143em 0; text-align: left; }
-p, section ul li { font: 400 1.2rem/1.8rem "calluna", serif; }
-section ul li { margin-left: 2.286em; list-style: none; }
-p, section ul { margin: 0 0 1.143em 0; }
+h1, h2 { line-height: 4.2rem; }
+h3 { color: @darkGreen; line-height: 1.75rem; text-align: left; }
+li { line-height: 1.75rem; }
+section ul li { list-style: none; }
+p, section ul { margin: 0 0 1.75rem 0; }
 a { color: @darkGreen; }
 a:hover { color: @lightGreen; }
 article { margin-bottom: 100px; }
@@ -60,26 +51,48 @@ article#home { margin-bottom: 200px; }
 	a, .nav .active > a { background-color: @darkGray; color: @lightGreen }
 	a:hover, .nav .active > a:hover, .nav .active > a:focus { background-color: @darkGray; color: @darkGreen; text-decoration: none; }
 	a { display: block; }
+	#menu-button { float: left; }
 }
 
 /* Home */
-h1#logo { font: 400 3.6rem/4.176rem "trajan-pro", serif; letter-spacing: -1px; margin-top: 50px; }
-
-.logo-degree { font-size: 1.8rem; line-height: 2.088rem; }
-
-h2#description { font: 400 1.8rem/2.088rem "trajan-pro" serif; margin-bottom: 420px; }
+h1#logo { font: 400 3rem/3.48rem "trajan-pro", serif; letter-spacing: -1px; margin-top: 20px; }
+.logo-degree { font-size: 1.5rem; line-height: 2.088rem; }
+h2#description { font: 400 1.5rem/2.088rem "trajan-pro" serif; margin-bottom: 420px; }
 
 /* Pages */
 
-.lead { margin: 0 0 1.143em 0; font-size: 1.4rem; font-weight: 200; line-height: 2rem; }
+.lead { margin: 0 0 1.143rem 0; font-size: 1.4rem; font-weight: 200; line-height: 2rem; }
 
 /* Footer */
 
-#toTop { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:100%; background:url(../../library/img/ui.totop.png) no-repeat left top; }
+#toTop { position:fixed; bottom:0px; right:0px; background: #111; color: #fcfcfc; font-size: 16px; padding: 8px 16px; text-decoration:none; text-align: center; }
+#toTop:hover { color: #999; }
 
-#toTopHover {	background:url(../../library/img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; 	-moz-opacity: 0; filter:alpha(opacity=0); }
-
-#toTop:active, #toTop:focus { outline:none; }
-
-footer[role="contentinfo"] p { font-size: 0.8rem; }
+footer[role="contentinfo"] { 
+	margin-bottom: 4rem; 
+	p { font-size: 0.8rem; }
+}
 #creditback3nd { background:url('images/back3nd-mini.png') no-repeat left top transparent; }
+
+/* Respond */
+@media only screen and (max-width: 480px) { 
+	.row-fluid .offset2:first-child { margin-left: 0; }
+	h1#logo { font-size: 1.6rem; line-height: normal; }
+	.logo-degree { font-size: 0.8rem; line-height: normal; }
+	h2#description { font-size: 0.8rem; line-height: normal;  margin-bottom: 240px; }
+	h2#tagline { font-size: 1rem; line-height: normal; }
+	h1, h2 { line-height: 2.8rem; }
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.5rem; }
+	h3 { font-size: 1.2rem; }
+	p, section ul li, .address { font-size: 1rem; line-height: 1.6rem; }
+	article#home { margin-bottom: 100px; }
+	img { width: 50%; height: 50%; }
+/* 	#toTop { width: 100%; padding: 8px 0; } */
+/* 	.navbar-fixed-top { position: fixed; margin: 0px;  } */
+}
+
+@media only screen and (min-width: 980px) {
+	body { padding-top: 60px; }
+	.container-fluid { max-width: 970px; margin: 0 auto; padding-left: 20px; padding-right: 20px }
+}

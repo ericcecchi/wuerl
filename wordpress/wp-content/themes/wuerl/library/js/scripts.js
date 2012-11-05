@@ -96,14 +96,20 @@ $(document).ready(function() {
 	
 	/* Smooth scroll */
 	$(function() {
-    $('nav a').bind('click',function(event){
-        var $anchor = $(this);
- 
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 75
-        }, 600,'easeInOutExpo');
-        event.preventDefault();
-    });
+		$('nav a').click(function(event) {
+			var $anchor = $(this);
+			var offset;
+			if (document.documentElement.clientWidth <= 480) {
+				offset = $($anchor.attr('href')).offset().top - 25;
+			}
+			else {
+				offset = $($anchor.attr('href')).offset().top - 75;
+			}
+			$('html, body').stop().animate({
+					scrollTop: offset
+			}, 600,'easeInOutExpo');
+			event.preventDefault();
+		});
 	});
 	 
 	$().UItoTop({ easingType: 'easeInOutExpo' });

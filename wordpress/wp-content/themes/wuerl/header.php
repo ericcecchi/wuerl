@@ -48,8 +48,6 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/wuerl.css"
-				
 	</head>
 	
 	<body <?php body_class('slide'); ?>  data-spy="scroll" data-target=".navbar" data-offset="120">
@@ -58,20 +56,17 @@
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container-fluid nav-container">
-						<nav role="navigation">
-							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="#home"><?php bloginfo('name'); ?></a>
-							
-							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<nav role="navigation">							
+							<a id="menu-button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 							</a>
-							
-							<div class="nav-collapse">
+							<a class="visible-desktop brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="#home"><?php bloginfo('name'); ?></a>
+							<div class="nav-collapse collapse">
 								<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-								<a href="tel:+18479913009">847 991 3009</a>
 							</div>
-
+							<a class="visible-desktop" href="tel:+18479913009">847 991 3009</a>
 						</nav>
 						
 					</div>
