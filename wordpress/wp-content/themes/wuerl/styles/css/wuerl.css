@@ -3,17 +3,15 @@ img.alignright{margin-left:10px;float:right;}
 img.aligncenter{display:block;margin:0 auto;}
 .ie8 #main .media-grid img{max-height:none important;max-width:none !important;}
 #main article img{height:auto;max-width:100%;}
-body{background-color:#fcfcfc;color:#111111;font:1.25rem/1.75rem 'calluna',serif;}
+body{background:no-repeat center top #fcfcfc url('../../img/Wuerl-Home-BG.jpg');background-color:#fcfcfc;color:#111111;font:1.25rem/1.75rem 'calluna',serif;transition:background-position 0.35s;-moz-transition:background-position 0.35s;-webkit-transition:background-position 0.35s;-o-transition:background-position 0.35s;}
 h1,h2,h3,h4,h5,h6{font-style:italic;font-weight:400;text-align:center;}
 h1,h2{line-height:4.2rem;}
 h3{color:#338833;line-height:1.75rem;text-align:left;}
 li{line-height:1.75rem;}
 section ul li{list-style:none;}
-p,section ul{margin:0 0 1.75rem 0;}
-a{color:#338833;}
-a:hover{color:#77cc77;}
-article{margin-bottom:100px;}
-article#home{margin-bottom:200px;}
+p,section ul,img{margin:0 0 1.75rem 0;}
+a{color:#338833;}a:hover{color:#77cc77;}
+article{margin-bottom:100px;}article#home{margin-bottom:200px;}
 .navbar-inverse .navbar-inner{background:#111111;}
 .navbar-inverse a,.navbar-inverse .brand,.navbar-inverse .nav>li>a{color:#fcfcfc;font:400 0.8rem 'trajan-pro','calluna',serif;font-weight:400 !important;padding:15px 15px 15px;}
 .navbar-inverse .brand:hover,.navbar-inverse .nav>li>a:hover{color:#338833;}
@@ -22,11 +20,10 @@ article#home{margin-bottom:200px;}
 .navbar-inverse a{display:block;}
 .navbar-inverse #menu-button{float:left;}
 h1#logo{font:400 3rem/3.48rem "trajan-pro",serif;letter-spacing:-1px;margin-top:20px;}
-.logo-degree{font-size:1.5rem;line-height:2.088rem;}
-h2#description{font:400 1.5rem/2.088rem "trajan-pro" serif;margin-bottom:420px;}
+span.logo-degree{font-size:1.5rem;line-height:2.088rem;}
+h2#description{font:400 1.5rem/2.088rem "trajan-pro" serif;margin-bottom:510px;}
 .lead{margin:0 0 1.143rem 0;font-size:1.4rem;font-weight:200;line-height:2rem;}
 #toTop{position:fixed;bottom:0px;right:0px;background:#111;color:#fcfcfc;font-size:16px;padding:8px 16px;text-decoration:none;text-align:center;}
-#toTop:hover{color:#999;}
 footer[role="contentinfo"]{margin-bottom:4rem;}footer[role="contentinfo"] p{font-size:0.8rem;}
-#creditback3nd{background:url('images/back3nd-mini.png') no-repeat left top transparent;}
-@media only screen and (max-width:480px){.row-fluid .offset2:first-child{margin-left:0;} h1#logo{font-size:1.6rem;line-height:normal;} .logo-degree{font-size:0.8rem;line-height:normal;} h2#description{font-size:0.8rem;line-height:normal;margin-bottom:240px;} h2#tagline{font-size:1rem;line-height:normal;} h1,h2{line-height:2.8rem;} h1{font-size:2rem;} h2{font-size:1.5rem;} h3{font-size:1.2rem;} p,section ul li,.address{font-size:1rem;line-height:1.6rem;} article#home{margin-bottom:100px;} img{width:50%;height:50%;}}@media only screen and (min-width:980px){body{padding-top:60px;} .container-fluid{max-width:970px;margin:0 auto;padding-left:20px;padding-right:20px;}}
+#creditback3nd{background:url('../../img/back3nd-mini.png') no-repeat left top transparent;}
+@media only screen and (min-width:980px){body{padding-top:60px;} .container-fluid{max-width:970px;margin:0 auto;padding-left:20px;padding-right:20px;}}@media only screen and (min-width:768px) and (max-width:979px){.navbar-fixed-top,.navbar-fixed-bottom{position:relative;z-index:9999;} .bg-reposition{background-position-y:300px;} h2#description{margin-bottom:500px;} .row-fluid .span8{width:100%;margin-left:0;padding:0 48px;} .row-fluid .offset2:first-child{margin-left:0;}}@media only screen and (max-width:767px){body{background-size:480px;background-position:center 40px;} .bg-reposition{background-position-y:338px;} .row-fluid .offset2:first-child{margin-left:0;} h1#logo{font-size:1.6rem;line-height:normal;margin:0;} span.logo-degree{font-size:0.8rem;line-height:normal;} h2#description{font-size:0.8rem;line-height:normal;margin-top:0;margin-bottom:248px;} h2#tagline{font-size:1rem;line-height:normal;} h1,h2{line-height:2.8rem;} h1{font-size:2rem;} h2{font-size:1.5rem;} h3{font-size:1.2rem;} p,section ul li,.address{font-size:1rem;line-height:1.6rem;} article#home{margin-bottom:100px;}}

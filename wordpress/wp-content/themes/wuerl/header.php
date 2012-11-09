@@ -19,13 +19,15 @@
 		
 		<!-- icons & favicons -->
 		<!-- For iPhone 4 -->
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/h/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-114x114-precomposed.png">
 		<!-- For iPad 1-->
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/m/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-72x72-precomposed.png">
 		<!-- For iPhone 3G, iPod Touch and Android -->
-		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed"  sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-57x57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png">
 		<!-- For Nokia -->
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon.png">
+		<link rel="shortcut icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
 		<!-- For everything else -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 				
@@ -62,7 +64,7 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 							</a>
-							<a class="visible-desktop brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="#home"><?php bloginfo('name'); ?></a>
+							<a class="visible-desktop brand" id="logo" title="#home" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 							<div class="nav-collapse collapse">
 								<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 							</div>

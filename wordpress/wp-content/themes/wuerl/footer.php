@@ -11,8 +11,8 @@
 				<nav class="clearfix">
 					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 				</nav>
-				<p class="pull-right">Design by <a href="http://back3nd.com" id="creditback3nd" title="Design by back3nd.">back3nd</a>.</p>
-				<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+				<p class="pull-right">Designed by <a href="http://back3nd.com" id="creditback3nd" title="Design by back3nd.">back3nd</a>.</p>
+				<p class="attribution">&copy; <?php bloginfo('name'); ?>. Original main photo by Papadakis Photography.</p>
 			</footer> <!-- end footer -->
 		</div> <!-- end #container -->
 		<!--[if lt IE 7 ]>

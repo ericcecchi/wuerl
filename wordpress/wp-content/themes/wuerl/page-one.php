@@ -5,7 +5,6 @@ Template Name: One
 ?>
 
 <?php get_header(); ?>
-
 <div id="content" class="clearfix row-fluid">
 	<div id="main" class="span8 offset2" role="main">
 			<?php
@@ -33,5 +32,4 @@ Template Name: One
 			?>
 	</div> <!-- end #main -->
 </div> <!-- end #content -->
-
 <?php get_footer(); ?>
