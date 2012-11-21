@@ -50,10 +50,10 @@ $(document).ready(function() {
 		var $anchor = $(this);
 		var offset;
 		if (document.documentElement.clientWidth <= 480) {
-			offset = $($anchor.attr('title')).offset().top - 25;
+			offset = $($anchor.attr('href')).offset().top - 25;
 		}
 		else {
-			offset = $($anchor.attr('title')).offset().top - 75;
+			offset = $($anchor.attr('href')).offset().top - 75;
 		}
 		$('html, body').stop().animate({
 				scrollTop: offset

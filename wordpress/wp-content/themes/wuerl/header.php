@@ -64,7 +64,7 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 							</a>
-							<a class="visible-desktop brand" id="logo" title="#home" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+							<a class="visible-desktop brand" id="logo" href="#home"><?php bloginfo('name'); ?></a>
 							<div class="nav-collapse collapse">
 								<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 							</div>
